@@ -1,0 +1,15 @@
+
+[
+    {
+      "id": "1",
+      "title": "Introducción a la Ciencia",
+      "description": "Explora los fundamentos de la física, química y biología.",
+      "image": "https://ejemplo.com/imagen1.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Tecnología Moderna",
+      "description": "Descubre los avances en inteligencia artificial y robótica.",
+      "image": "https://ejemplo.com/imagen2.jpg"
+    }
+  ]
