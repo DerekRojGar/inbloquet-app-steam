@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   View, 
   Text, 
@@ -10,121 +10,50 @@ import {
   Image 
 } from 'react-native';
 import { globalStyles } from '../styles/globalStyles';
+import steamDataJson from '../data/steamData.json'; // Importar JSON
 
 const { width } = Dimensions.get('window');
 
-const SteamScreen = ({ setCurrentScreen }) => {
-  const [activeTab, setActiveTab] = useState('S');
-  const [searchQuery, setSearchQuery] = useState('');
+// Mapeo de imágenes
+const imageMap: { [key: string]: any } = {
+  "science.png": require("../assets/icons/science.png"),
+  "tech.png": require("../assets/icons/tech.png"),
+  "engineering.png": require("../assets/icons/engineering.png"),
+  "art.png": require("../assets/icons/art.png"),
+  "math.png": require("../assets/icons/math.png"),
+  "dna.png": require("../assets/images/dna.png"),
+  "space.png": require("../assets/images/space.png"),
+  "ai.png": require("../assets/images/ai.png"),
+  "robot.png": require("../assets/images/robot.png"),
+  "digital-art.png": require("../assets/images/digital-art.png"),
+  "fractal.png": require("../assets/images/fractal.png"),
+  "eco.png": require("../assets/images/eco.png"),
+  "brain.png": require("../assets/images/brain.png"),
+  "chem.png": require("../assets/images/chem.png"),
+  "quantum.png": require("../assets/images/quantum.png"),
+  "evolution.png": require("../assets/images/evolution.png"),
+};
 
-  // Datos con rutas PNG
-  const steamData = {
-    S: {
-      title: "Science",
-      color: "#00A859",
-      icon: require('../assets/icons/science.png'),
-      content: [
-        { 
-          title: "Biología Molecular", 
-          image: require('../assets/images/dna.png'),
-          text: "Descubre los secretos del ADN y la genética moderna"
-        },
-        {
-          title: "Astrofísica",
-          image: require('../assets/images/space.png'),
-          text: "Explora los misterios del cosmos y los agujeros negros"
-        },
-        { 
-          title: "Biología Molecular", 
-          image: require('../assets/images/dna.png'),
-          text: "Descubre los secretos del ADN y la genética moderna"
-        },
-        {
-          title: "Astrofísica",
-          image: require('../assets/images/space.png'),
-          text: "Explora los misterios del cosmos y los agujeros negros"
-        },
-        { 
-          title: "Biología Molecular", 
-          image: require('../assets/images/dna.png'),
-          text: "Descubre los secretos del ADN y la genética moderna"
-        },
-        {
-          title: "Astrofísica",
-          image: require('../assets/images/space.png'),
-          text: "Explora los misterios del cosmos y los agujeros negros"
-        },
-        { 
-          title: "Biología Molecular", 
-          image: require('../assets/images/dna.png'),
-          text: "Descubre los secretos del ADN y la genética moderna"
-        },
-        {
-          title: "Astrofísica",
-          image: require('../assets/images/space.png'),
-          text: "Explora los misterios del cosmos y los agujeros negros"
-        }
-      ]
-    },
-    T: {
-      title: "Technology",
-      color: "#2196F3",
-      icon: require('../assets/icons/tech.png'),
-      content: [
-        {
-          title: "Inteligencia Artificial",
-          image: require('../assets/images/ai.png'),
-          text: "Aprende sobre redes neuronales y machine learning"
-        }
-      ]
-    },
-    E: {
-      title: "Engineering",
-      color: "#FF5722",
-      icon: require('../assets/icons/engineering.png'),
-      content: [
-        {
-          title: "Robótica",
-          image: require('../assets/images/robot.png'),
-          text: "Diseña y construye robots inteligentes"
-        }
-      ]
-    },
-    A: {
-      title: "Art",
-      color: "#9C27B0",
-      icon: require('../assets/icons/art.png'),
-      content: [
-        {
-          title: "Diseño Digital",
-          image: require('../assets/images/digital-art.png'),
-          text: "Combina arte y tecnología en creaciones digitales"
-        }
-      ]
-    },
-    M: {
-      title: "Math",
-      color: "#3F51B5",
-      icon: require('../assets/icons/math.png'),
-      content: [
-        {
-          title: "Geometría Fractal",
-          image: require('../assets/images/fractal.png'),
-          text: "Descubre los patrones matemáticos de la naturaleza"
-        }
-      ]
-    }
-  };
+// Función para obtener imágenes desde el mapa
+const getImageSource = (imagePath: string) => {
+  return imageMap[imagePath] || require("../assets/icons/science.png");
+};
+
+const SteamScreen: React.FC = () => {
+  const [activeTab, setActiveTab] = useState<keyof typeof steamDataJson>('S');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [steamData, setSteamData] = useState(steamDataJson);
 
   // Filtrar contenido basado en búsqueda
   const filteredContent = steamData[activeTab].content.filter((item) =>
     item.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
+  
 
   return (
     <View style={globalStyles.container}>
       {/* Header */}
-      <View style={styles.header}>        
+      <View style={styles.header}>
         <TextInput
           style={styles.searchBar}
           placeholder="Buscar en STEAM..."
@@ -150,10 +79,10 @@ const SteamScreen = ({ setCurrentScreen }) => {
                 borderColor: steamData[tab].color
               }
             ]}
-            onPress={() => setActiveTab(tab)}
+            onPress={() => setActiveTab(tab as keyof typeof steamDataJson)}
           >
             <Image
-              source={steamData[tab].icon}
+              source={getImageSource(steamData[tab].icon)}
               style={styles.tabIcon}
             />
             <Text style={[
@@ -180,7 +109,7 @@ const SteamScreen = ({ setCurrentScreen }) => {
             ]}
           >
             <Image 
-              source={item.image} 
+              source={getImageSource(item.image)} 
               style={styles.cardImage}
               resizeMode="cover"
             />
@@ -211,11 +140,6 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: '#000'
   },
-  backIcon: {
-    width: 30,
-    height: 30,
-    marginRight: 10
-  },
   searchBar: {
     flex: 1,
     height: 40,
@@ -223,14 +147,13 @@ const styles = StyleSheet.create({
     borderColor: '#555',
     borderRadius: 10,
     paddingHorizontal: 10,
-    backgroundColor: '#333', // Oscurecida
-    color: '#FFF' // Texto en blanco
+    backgroundColor: '#333',
+    color: '#FFF'
   },
   tabContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingVertical: 30, 
-    marginBottom: 0,
+    paddingVertical: 30,
   },
   tabButton: {
     width: 82,
@@ -253,9 +176,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   contentContainer: {
-    alignItems: 'center', 
+    alignItems: 'center',
     justifyContent: 'center',
-    paddingBottom: 20, 
+    paddingBottom: 20,
   },
   card: {
     flexDirection: 'row',

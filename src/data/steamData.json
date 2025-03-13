@@ -1,15 +1,72 @@
-
-[
-    {
-      "id": "1",
-      "title": "Introducción a la Ciencia",
-      "description": "Explora los fundamentos de la física, química y biología.",
-      "image": "https://ejemplo.com/imagen1.jpg"
-    },
-    {
-      "id": "2",
-      "title": "Tecnología Moderna",
-      "description": "Descubre los avances en inteligencia artificial y robótica.",
-      "image": "https://ejemplo.com/imagen2.jpg"
-    }
-  ]
+{
+  "S": {
+    "title": "Science",
+    "color": "#00A859",
+    "icon": "science.png",
+    "content": [
+      { "title": "Biología Molecular", "image": "dna.png", "text": "Descubre los secretos del ADN y la genética moderna." },
+      { "title": "Astrofísica", "image": "space.png", "text": "Explora los misterios del cosmos y los agujeros negros." },
+      { "title": "Ecología y Medio Ambiente", "image": "eco.png", "text": "Aprende sobre la conservación de nuestro planeta." },
+      { "title": "Neurociencia", "image": "brain.png", "text": "Investiga cómo funciona el cerebro humano." },
+      { "title": "Química Orgánica", "image": "chem.png", "text": "Comprende los elementos y sus reacciones." },
+      { "title": "Física Cuántica", "image": "quantum.png", "text": "Descubre el mundo de partículas y energía." },
+      { "title": "Genética y Evolución", "image": "evolution.png", "text": "Explora la historia de la vida en la Tierra." }
+    ]
+  },
+  "T": {
+    "title": "Technology",
+    "color": "#2196F3",
+    "icon": "tech.png",
+    "content": [
+      { "title": "Inteligencia Artificial", "image": "ai.png", "text": "Aprende sobre redes neuronales y machine learning." },
+      { "title": "Internet de las Cosas", "image": "iot.png", "text": "Explora la conexión entre dispositivos inteligentes." },
+      { "title": "Desarrollo de Apps", "image": "app-dev.png", "text": "Descubre cómo crear aplicaciones móviles." },
+      { "title": "Ciberseguridad", "image": "cyber.png", "text": "Protege información y evita ataques digitales." },
+      { "title": "Realidad Virtual", "image": "vr.png", "text": "Sumérgete en experiencias interactivas digitales." },
+      { "title": "Blockchain", "image": "blockchain.png", "text": "Entiende cómo funcionan las criptomonedas y la seguridad digital." },
+      { "title": "Big Data y Analítica", "image": "big-data.png", "text": "Analiza grandes volúmenes de información para obtener conocimientos." }
+    ]
+  },
+  "E": {
+    "title": "Engineering",
+    "color": "#FF5722",
+    "icon": "engineering.png",
+    "content": [
+      { "title": "Robótica", "image": "robot.png", "text": "Diseña y construye robots inteligentes." },
+      { "title": "Energías Renovables", "image": "solar.png", "text": "Aprovecha la energía del sol y el viento." },
+      { "title": "Automatización Industrial", "image": "factory.png", "text": "Optimiza la producción con maquinaria inteligente." },
+      { "title": "Drones y Aeroespacial", "image": "drone.png", "text": "Explora el diseño y uso de drones modernos." },
+      { "title": "Ingeniería Biomédica", "image": "biomed.png", "text": "Desarrolla prótesis y equipos médicos avanzados." },
+      { "title": "Impresión 3D", "image": "3d-printing.png", "text": "Crea objetos físicos a partir de modelos digitales." },
+      { "title": "Nanotecnología", "image": "nano.png", "text": "Explora la manipulación de materiales a nivel molecular." }
+    ]
+  },
+  "A": {
+    "title": "Art",
+    "color": "#9C27B0",
+    "icon": "art.png",
+    "content": [
+      { "title": "Diseño Digital", "image": "digital-art.png", "text": "Combina arte y tecnología en creaciones digitales." },
+      { "title": "Animación 3D", "image": "animation.png", "text": "Explora el mundo del modelado y la animación." },
+      { "title": "Música Electrónica", "image": "music.png", "text": "Crea sonidos con sintetizadores y software." },
+      { "title": "Fotografía Creativa", "image": "photo.png", "text": "Captura imágenes con un enfoque artístico." },
+      { "title": "Graffiti y Arte Urbano", "image": "graffiti.png", "text": "Expresa ideas a través del arte en las calles." },
+      { "title": "Escultura Digital", "image": "sculpture.png", "text": "Usa software para modelar en 3D." },
+      { "title": "Arte Generativo", "image": "generative.png", "text": "Crea arte con algoritmos y programación." }
+    ]
+  },
+  "M": {
+    "title": "Math",
+    "color": "#3F51B5",
+    "icon": "math.png",
+    "content": [
+      { "title": "Geometría Fractal", "image": "fractal.png", "text": "Descubre los patrones matemáticos de la naturaleza." },
+      { "title": "Estadística y Probabilidad", "image": "stats.png", "text": "Aprende sobre la predicción de eventos." },
+      { "title": "Álgebra Computacional", "image": "algebra.png", "text": "Usa la matemática para resolver problemas complejos." },
+      { "title": "Criptografía", "image": "crypto.png", "text": "Protege información con técnicas matemáticas." },
+      { "title": "Matemática Financiera", "image": "finance.png", "text": "Calcula inversiones, intereses y rentabilidad." },
+      { "title": "Topología", "image": "topology.png", "text": "Explora las propiedades de los espacios geométricos." },
+      { "title": "Cálculo Diferencial", "image": "calculus.png", "text": "Comprende los cambios en sistemas dinámicos." }
+    ]
+  }
+}
