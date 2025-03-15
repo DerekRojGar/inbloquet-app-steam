@@ -7,52 +7,44 @@ import {
   ScrollView, 
   Dimensions, 
   TextInput, 
-  Image 
+  Image,
+  BackHandler,
+  ImageBackground // 1. Importar ImageBackground
 } from 'react-native';
 import { globalStyles } from '../styles/globalStyles';
-import steamDataJson from '../data/steamData.json'; // Importar JSON
+import steamDataJson from '../data/steamData.json';
+import { getImageSource } from '../utils/imageMappings';
 
 const { width } = Dimensions.get('window');
 
-// Mapeo de imágenes
-const imageMap: { [key: string]: any } = {
-  "science.png": require("../assets/icons/science.png"),
-  "tech.png": require("../assets/icons/tech.png"),
-  "engineering.png": require("../assets/icons/engineering.png"),
-  "art.png": require("../assets/icons/art.png"),
-  "math.png": require("../assets/icons/math.png"),
-  "dna.png": require("../assets/images/dna.png"),
-  "space.png": require("../assets/images/space.png"),
-  "ai.png": require("../assets/images/ai.png"),
-  "robot.png": require("../assets/images/robot.png"),
-  "digital-art.png": require("../assets/images/digital-art.png"),
-  "fractal.png": require("../assets/images/fractal.png"),
-  "eco.png": require("../assets/images/eco.png"),
-  "brain.png": require("../assets/images/brain.png"),
-  "chem.png": require("../assets/images/chem.png"),
-  "quantum.png": require("../assets/images/quantum.png"),
-  "evolution.png": require("../assets/images/evolution.png"),
-};
-
-// Función para obtener imágenes desde el mapa
-const getImageSource = (imagePath: string) => {
-  return imageMap[imagePath] || require("../assets/icons/science.png");
-};
-
-const SteamScreen: React.FC = () => {
+const SteamScreen = ({ setCurrentScreen }) => {
   const [activeTab, setActiveTab] = useState<keyof typeof steamDataJson>('S');
   const [searchQuery, setSearchQuery] = useState('');
   const [steamData, setSteamData] = useState(steamDataJson);
 
-  // Filtrar contenido basado en búsqueda
+  useEffect(() => {
+    const backHandler = BackHandler.addEventListener(
+      'hardwareBackPress',
+      () => {
+        setCurrentScreen('Home');
+        return true;
+      }
+    );
+    return () => backHandler.remove();
+  }, []);
+
   const filteredContent = steamData[activeTab].content.filter((item) =>
     item.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
-  
 
+  // 2. Cambiar View por ImageBackground
   return (
-    <View style={globalStyles.container}>
-      {/* Header */}
+    <ImageBackground
+
+      style={globalStyles.container}
+      resizeMode="cover"
+    >
+      {/* Contenido existente sin cambios */}
       <View style={styles.header}>
         <TextInput
           style={styles.searchBar}
@@ -63,7 +55,6 @@ const SteamScreen: React.FC = () => {
         />
       </View>
 
-      {/* Selector de categorías */}
       <ScrollView 
         horizontal 
         showsHorizontalScrollIndicator={false}
@@ -95,7 +86,6 @@ const SteamScreen: React.FC = () => {
         ))}
       </ScrollView>
 
-      {/* Contenido principal */}
       <ScrollView contentContainerStyle={styles.contentContainer}>
         {filteredContent.map((item, index) => (
           <TouchableOpacity 
@@ -128,11 +118,11 @@ const SteamScreen: React.FC = () => {
           </TouchableOpacity>
         ))}
       </ScrollView>
-    </View>
+    </ImageBackground>
   );
 };
 
-// Estilos
+// 3. Estilos se mantienen IDÉNTICOS
 const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',

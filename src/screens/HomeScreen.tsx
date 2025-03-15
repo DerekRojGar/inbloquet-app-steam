@@ -5,41 +5,28 @@ import { globalStyles } from '../styles/globalStyles';
 const { width, height } = Dimensions.get('window');
 
 const HomeScreen = ({ setCurrentScreen }) => {
-  if (!setCurrentScreen) {
-    console.error('Error: setCurrentScreen no está definido en HomeScreen');
-    return null;
-  }
-  
   return (
     <ImageBackground
-      source={require('../assets/bg-inbloquet-03.png')}
-      style={{
-        width: '100%',
-        height: '100%',
-        justifyContent: 'center',
-      }}
-      resizeMode="cover" // Muestra el 100% de la imagen sin recortes
+      source={require('../assets/bg-inbloquet-06.png')}
+      style={styles.background}
+      resizeMode="cover"
     >
-      {/* Logo en la esquina superior izquierda */}
+      {/* Logo más grande y más arriba */}
       <View style={styles.logoContainer}>
         <Image
           source={require('../assets/Inbloquet-logo.png')}
-          style={{
-            width: 100,
-            height: 100,
-
-          }}
+          style={styles.logo}
         />
       </View>
 
-      {/* Header */}
+      {/* Header debajo del logo */}
       <View style={styles.header}>
         <Text style={styles.title}>| INBLOQUERS |</Text>
       </View>
 
-      {/* Menú Inclinado */}
+      {/* Menú inclinado (sin cambios) */}
       <View style={styles.menuContainer}>
-      <TouchableOpacity style={[styles.section, styles.steamSection]} onPress={() => setCurrentScreen('STEAM')}>
+        <TouchableOpacity style={[styles.section, styles.steamSection]} onPress={() => setCurrentScreen('STEAM')}>
           <Text style={styles.sectionText}>STEAM</Text>
         </TouchableOpacity>
         <TouchableOpacity style={[styles.section, styles.gameSection]}>
@@ -57,10 +44,28 @@ const HomeScreen = ({ setCurrentScreen }) => {
 };
 
 const styles = StyleSheet.create({
-  header: {
-    padding: 20,
+  background: {
+    width: '100%',
+    height: '100%',
+    justifyContent: 'center',
+  },
+  logoContainer: {
+    position: 'absolute',
+    top: height * -0.03,  // Ajusta esta posición vertical (más arriba)
+    left: 0,
+    right: 0,
     alignItems: 'center',
-    marginTop: height * 0.1, // Ajuste para dejar espacio al logo
+    zIndex: 2,
+  },
+  logo: {
+    width: 200,  // Tamaño aumentado
+    height: 200,
+    resizeMode: 'contain',
+  },
+  header: {
+    padding: 2,
+    alignItems: 'center',
+    marginTop: height * 0.2,  // Espacio para el logo (ajustado)
   },
   title: {
     fontSize: 28,
@@ -108,17 +113,6 @@ const styles = StyleSheet.create({
     textShadowColor: 'rgba(0, 0, 0, 0.75)',
     textShadowOffset: { width: 2, height: 2 },
     textShadowRadius: 5,
-  },
-  logoContainer: {
-    position: 'absolute',
-    top: 30, // Ajusta según el dispositivo
-    left: 20, // Ajusta según el dispositivo
-    zIndex: 2, // Asegura que esté por encima del header
-  },
-  logo: {
-    width: 80, // Tamaño reducido para no obstruir el header
-    height: 80,
-    resizeMode: 'contain',
   },
 });
 

@@ -23,7 +23,6 @@
       { "title": "Desarrollo de Apps", "image": "app-dev.png", "text": "Descubre cómo crear aplicaciones móviles." },
       { "title": "Ciberseguridad", "image": "cyber.png", "text": "Protege información y evita ataques digitales." },
       { "title": "Realidad Virtual", "image": "vr.png", "text": "Sumérgete en experiencias interactivas digitales." },
-      { "title": "Blockchain", "image": "blockchain.png", "text": "Entiende cómo funcionan las criptomonedas y la seguridad digital." },
       { "title": "Big Data y Analítica", "image": "big-data.png", "text": "Analiza grandes volúmenes de información para obtener conocimientos." }
     ]
   },
@@ -33,7 +32,7 @@
     "icon": "engineering.png",
     "content": [
       { "title": "Robótica", "image": "robot.png", "text": "Diseña y construye robots inteligentes." },
-      { "title": "Energías Renovables", "image": "solar.png", "text": "Aprovecha la energía del sol y el viento." },
+      { "title": "Energías Renovables", "image": "eolica.png", "text": "Aprovecha la energía del sol y el viento." },
       { "title": "Automatización Industrial", "image": "factory.png", "text": "Optimiza la producción con maquinaria inteligente." },
       { "title": "Drones y Aeroespacial", "image": "drone.png", "text": "Explora el diseño y uso de drones modernos." },
       { "title": "Ingeniería Biomédica", "image": "biomed.png", "text": "Desarrolla prótesis y equipos médicos avanzados." },
