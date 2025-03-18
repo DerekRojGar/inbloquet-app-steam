@@ -1,10 +1,35 @@
 {
   "S": {
     "title": "Science",
-    "color": "#00A859",
-    "icon": "science.png",
+    "color": "#003891",
+    "icon": "steam-science.png",
     "content": [
-      { "title": "Biología Molecular", "image": "dna.png", "text": "Descubre los secretos del ADN y la genética moderna." },
+      {
+        "title": "Biología Molecular",
+        "image": "dna.png",
+        "text": "Descubre los secretos del ADN y la genética moderna.",
+        "author": "Dr. Elena Torres",
+        "date": "15 Marzo 2024",
+        "blogContent": {
+          "headerImage": "dna-banner.jpg",
+          "sections": [
+            {
+              "title": "El lenguaje de la vida",
+              "content": "La biología molecular nos permite descifrar el código genético que gobierna todos los procesos vitales. Desde la estructura de doble hélice del ADN descubierta por Watson y Crick hasta las últimas técnicas de edición genética CRISPR...",
+              "image": "dna-microscope.png"
+            },
+            {
+              "title": "Técnicas revolucionarias",
+              "content": "La PCR (Reacción en Cadena de la Polimerasa) ha sido fundamental para avances en medicina forense y diagnóstico de enfermedades. Actualmente, la secuenciación de próxima generación permite analizar genomas completos en horas."
+            }
+          ],
+          "conclusion": "La biología molecular continúa revolucionando la medicina moderna, con aplicaciones en terapia génica, agricultura sostenible y comprensión de enfermedades hereditarias.",
+          "references": [
+            "Alberts B. et al. - Molecular Biology of the Cell",
+            "Nobel Prize in Chemistry 2020 - CRISPR/Cas9"
+          ]
+        }
+      },
       { "title": "Astrofísica", "image": "space.png", "text": "Explora los misterios del cosmos y los agujeros negros." },
       { "title": "Ecología y Medio Ambiente", "image": "eco.png", "text": "Aprende sobre la conservación de nuestro planeta." },
       { "title": "Neurociencia", "image": "brain.png", "text": "Investiga cómo funciona el cerebro humano." },
@@ -15,8 +40,8 @@
   },
   "T": {
     "title": "Technology",
-    "color": "#2196F3",
-    "icon": "tech.png",
+    "color": "#d1dd00",
+    "icon": "steam-tech.png",
     "content": [
       { "title": "Inteligencia Artificial", "image": "ai.png", "text": "Aprende sobre redes neuronales y machine learning." },
       { "title": "Internet de las Cosas", "image": "iot.png", "text": "Explora la conexión entre dispositivos inteligentes." },
@@ -28,8 +53,8 @@
   },
   "E": {
     "title": "Engineering",
-    "color": "#FF5722",
-    "icon": "engineering.png",
+    "color": "#4bb1e0",
+    "icon": "steam-engine.png",
     "content": [
       { "title": "Robótica", "image": "robot.png", "text": "Diseña y construye robots inteligentes." },
       { "title": "Energías Renovables", "image": "eolica.png", "text": "Aprovecha la energía del sol y el viento." },
@@ -42,8 +67,8 @@
   },
   "A": {
     "title": "Art",
-    "color": "#9C27B0",
-    "icon": "art.png",
+    "color": "#f6c500",
+    "icon": "steam-art.png",
     "content": [
       { "title": "Diseño Digital", "image": "digital-art.png", "text": "Combina arte y tecnología en creaciones digitales." },
       { "title": "Animación 3D", "image": "animation.png", "text": "Explora el mundo del modelado y la animación." },
@@ -56,8 +81,8 @@
   },
   "M": {
     "title": "Math",
-    "color": "#3F51B5",
-    "icon": "math.png",
+    "color": "#FF5722",
+    "icon": "steam-math.png",
     "content": [
       { "title": "Geometría Fractal", "image": "fractal.png", "text": "Descubre los patrones matemáticos de la naturaleza." },
       { "title": "Estadística y Probabilidad", "image": "stats.png", "text": "Aprende sobre la predicción de eventos." },

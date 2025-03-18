@@ -2,11 +2,11 @@
 
 const imageMap: { [key: string]: any } = {
     // Icons
-    "science.png": require("../assets/icons/science.png"),
-    "tech.png": require("../assets/icons/tech.png"),
-    "engineering.png": require("../assets/icons/engineering.png"),
-    "art.png": require("../assets/icons/art.png"),
-    "math.png": require("../assets/icons/math.png"),
+    "steam-science.png": require("../assets/icons/steam-science.png"),
+    "steam-tech.png": require("../assets/icons/steam-tech.png"),
+    "steam-engine.png": require("../assets/icons/steam-engine.png"),
+    "steam-art.png": require("../assets/icons/steam-art.png"),
+    "steam-math.png": require("../assets/icons/steam-math.png"),
   
     // Images
     "dna.png": require("../assets/images/dna.png"),
@@ -43,6 +43,8 @@ const imageMap: { [key: string]: any } = {
     "finance.png": require("../assets/images/finance.png"),
     "topology.png": require("../assets/images/topology.png"),
     "calculus.png": require("../assets/images/calculus.png"),
+    "dna-microscope.png" : require("../assets/images/dna.png"),
+    "dna-banner.jpg" : require("../assets/images/dna-banner.jpg"),
   };
   
   export const getImageSource = (imagePath: string) => {

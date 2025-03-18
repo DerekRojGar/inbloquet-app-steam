@@ -5,46 +5,58 @@ import {
   TouchableOpacity, 
   StyleSheet, 
   ScrollView, 
-  Dimensions, 
   TextInput, 
   Image,
   BackHandler,
-  ImageBackground // 1. Importar ImageBackground
+  ImageBackground 
 } from 'react-native';
 import { globalStyles } from '../styles/globalStyles';
 import steamDataJson from '../data/steamData.json';
 import { getImageSource } from '../utils/imageMappings';
-
-const { width } = Dimensions.get('window');
+import DetailScreen from './DetailScreen';
 
 const SteamScreen = ({ setCurrentScreen }) => {
   const [activeTab, setActiveTab] = useState<keyof typeof steamDataJson>('S');
   const [searchQuery, setSearchQuery] = useState('');
   const [steamData, setSteamData] = useState(steamDataJson);
+  const [selectedItem, setSelectedItem] = useState(null);
 
   useEffect(() => {
     const backHandler = BackHandler.addEventListener(
       'hardwareBackPress',
       () => {
-        setCurrentScreen('Home');
-        return true;
+        if (selectedItem) {
+          setSelectedItem(null);
+          return true;
+        } else {
+          setCurrentScreen('Home');
+          return true;
+        }
       }
     );
     return () => backHandler.remove();
-  }, []);
+  }, [selectedItem]);
 
   const filteredContent = steamData[activeTab].content.filter((item) =>
     item.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  // 2. Cambiar View por ImageBackground
+  if (selectedItem) {
+    return (
+      <DetailScreen 
+        itemData={selectedItem} 
+        color={steamData[activeTab].color}
+        goBack={() => setSelectedItem(null)}
+      />
+    );
+  }
+
   return (
     <ImageBackground
-
+      backgroundColor="000"
       style={globalStyles.container}
       resizeMode="cover"
     >
-      {/* Contenido existente sin cambios */}
       <View style={styles.header}>
         <TextInput
           style={styles.searchBar}
@@ -97,6 +109,7 @@ const SteamScreen = ({ setCurrentScreen }) => {
                 borderColor: steamData[activeTab].color
               }
             ]}
+            onPress={() => setSelectedItem(item)}
           >
             <Image 
               source={getImageSource(item.image)} 
@@ -112,7 +125,7 @@ const SteamScreen = ({ setCurrentScreen }) => {
                   { backgroundColor: steamData[activeTab].color }
                 ]}
               >
-                <Text style={styles.exploreText}>Explorar →</Text>
+                <Text style={styles.exploreText}>Leer artículo →</Text>
               </TouchableOpacity>
             </View>
           </TouchableOpacity>
@@ -122,7 +135,7 @@ const SteamScreen = ({ setCurrentScreen }) => {
   );
 };
 
-// 3. Estilos se mantienen IDÉNTICOS
+
 const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
@@ -144,15 +157,17 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     paddingVertical: 30,
+    backgroundColor: '#FFF'
   },
   tabButton: {
-    width: 82,
+    minWidth: 82,
     height: 90,
     borderWidth: 3,
     borderRadius: 20,
     alignItems: 'center',
     justifyContent: 'center',
     marginHorizontal: 2,
+    paddingHorizontal: 5
   },
   tabIcon: {
     width: 40,
@@ -169,6 +184,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     paddingBottom: 20,
+    backgroundColor: '#FFF'
   },
   card: {
     flexDirection: 'row',
@@ -177,7 +193,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     marginTop: 10,
     borderWidth: 1,
-    width: width * 0.95,
+    width: '95%',
     alignSelf: 'center'
   },
   cardImage: {
@@ -190,7 +206,8 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     fontWeight: 'bold',
-    fontSize: 14
+    fontSize: 14,
+    color: '#000'
   },
   cardText: {
     fontSize: 12,

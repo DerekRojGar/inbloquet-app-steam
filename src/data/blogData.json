@@ -1,0 +1,25 @@
+[
+    {
+      "id": "articulo-1",
+      "area": "S",
+      "title": "Biología Molecular: Revelando el ADN",
+      "author": "Dr. Juan Pérez",
+      "date": "2023-03-17",
+      "images": ["dna.png", "microscope.png"],
+      "content": "En este artículo exploramos cómo se estructura el ADN y las implicaciones en la genética moderna. Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      "tags": ["Biología", "Genética", "Ciencia"]
+    },
+    {
+      "id": "articulo-2",
+      "area": "T",
+      "title": "Inteligencia Artificial en el Mundo Real",
+      "author": "María García",
+      "date": "2023-03-18",
+      "images": ["ai.png"],
+      "content": "La IA ya está transformando la industria y la vida diaria; en este blog analizamos sus aplicaciones y desafíos. Lorem ipsum dolor sit amet...",
+      "tags": ["Tecnología", "IA", "Innovación"]
+    }
+    
+  ]
+  
+  
