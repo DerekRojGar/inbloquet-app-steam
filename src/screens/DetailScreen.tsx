@@ -33,7 +33,7 @@ const DetailScreen = ({ itemData, color, goBack }) => {
           <Text style={styles.backButtonText}>← Volver</Text>
         </TouchableOpacity>
         
-        <Text style={styles.sectionTitle}>CIENCIA</Text>
+        <Text style={styles.sectionTitle}>STEAM</Text>
         
         <Image 
           source={require('../assets/Inbloquet-logo.png')}
@@ -51,9 +51,9 @@ const DetailScreen = ({ itemData, color, goBack }) => {
         />
         
         <View style={styles.titleContainer}>
-          <Text style={styles.title}>{title} 🧬</Text>
+          <Text style={styles.title}>{title} </Text>
           <View style={styles.metaContainer}>
-            <Text style={styles.metaText}>👩🔬 Por: {itemData.author}</Text>
+            <Text style={styles.metaText}>🔬 Por: {itemData.author}</Text>
             <Text style={styles.metaText}>📅 {itemData.date}</Text>
           </View>
         </View>

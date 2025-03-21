@@ -1,8 +1,8 @@
 {
   "S": {
-    "title": "Science",
+    "title": "Ciencia",
     "color": "#003891",
-    "icon": "steam-science.png",
+    "icon": "science.png",
     "content": [
       {
         "title": "Biología Molecular",
@@ -30,67 +30,902 @@
           ]
         }
       },
-      { "title": "Astrofísica", "image": "space.png", "text": "Explora los misterios del cosmos y los agujeros negros." },
-      { "title": "Ecología y Medio Ambiente", "image": "eco.png", "text": "Aprende sobre la conservación de nuestro planeta." },
-      { "title": "Neurociencia", "image": "brain.png", "text": "Investiga cómo funciona el cerebro humano." },
-      { "title": "Química Orgánica", "image": "chem.png", "text": "Comprende los elementos y sus reacciones." },
-      { "title": "Física Cuántica", "image": "quantum.png", "text": "Descubre el mundo de partículas y energía." },
-      { "title": "Genética y Evolución", "image": "evolution.png", "text": "Explora la historia de la vida en la Tierra." }
+      {
+        "title": "Astrofísica",
+        "image": "space.png",
+        "text": "Explora los misterios del cosmos y los agujeros negros.",
+        "author": "Prof. Carlos Mendoza",
+        "date": "20 Abril 2024",
+        "blogContent": {
+          "headerImage": "space-banner.jpg",
+          "sections": [
+            {
+              "title": "El universo y sus secretos",
+              "content": "La astrofísica nos permite comprender cómo funcionan las estrellas, los planetas y las galaxias. Desde el Big Bang hasta la formación de sistemas solares, esta ciencia nos ayuda a entender nuestro lugar en el cosmos.",
+              "image": "galaxy.jpg"
+            },
+            {
+              "title": "Agujeros negros: los gigantes invisibles",
+              "content": "Los agujeros negros son regiones del espacio donde la gravedad es tan fuerte que nada puede escapar de ellas, ni siquiera la luz. Estudiarlos nos ayuda a entender las leyes fundamentales de la física."
+            }
+          ],
+          "conclusion": "La astrofísica nos invita a mirar al cielo y maravillarnos con la inmensidad del universo, inspirándonos a seguir explorando y aprendiendo sobre nuestro lugar en él.",
+          "references": [
+            "Hawking, S. - Breve historia del tiempo",
+            "Tyson, N. - Astrofísica para jóvenes apurados"
+          ]
+        }
+      },
+      {
+        "title": "Ecología y Medio Ambiente",
+        "image": "eco.png",
+        "text": "Aprende sobre la conservación de nuestro planeta.",
+        "author": "Dra. Laura Gómez",
+        "date": "5 Junio 2024",
+        "blogContent": {
+          "headerImage": "eco-banner.jpg",
+          "sections": [
+            {
+              "title": "La importancia de la biodiversidad",
+              "content": "La ecología estudia las relaciones entre los seres vivos y su entorno. Cada especie, por pequeña que sea, cumple una función vital en el equilibrio de los ecosistemas.",
+              "image": "biodiversity.jpg"
+            },
+            {
+              "title": "Nuestro papel en la conservación",
+              "content": "Como habitantes de la Tierra, tenemos la responsabilidad de cuidar el medio ambiente. Pequeñas acciones, como reciclar y ahorrar agua, contribuyen a la salud del planeta."
+            }
+          ],
+          "conclusion": "Entender la ecología nos motiva a proteger nuestro entorno y garantizar un futuro sostenible para las próximas generaciones.",
+          "references": [
+            "Goodall, J. - El libro de la esperanza",
+            "Attenborough, D. - Una vida en nuestro planeta"
+          ]
+        }
+      },
+      {
+        "title": "Neurociencia",
+        "image": "brain.png",
+        "text": "Investiga cómo funciona el cerebro humano.",
+        "author": "Dr. Miguel Ruiz",
+        "date": "12 Agosto 2024",
+        "blogContent": {
+          "headerImage": "brain-banner.jpg",
+          "sections": [
+            {
+              "title": "El cerebro: nuestro centro de control",
+              "content": "La neurociencia estudia el sistema nervioso y cómo este controla nuestras acciones, pensamientos y emociones. El cerebro es uno de los órganos más complejos y fascinantes del cuerpo humano.",
+              "image": "neurons.jpg"
+            },
+            {
+              "title": "Aprendizaje y memoria",
+              "content": "Comprender cómo aprendemos y recordamos nos ayuda a desarrollar mejores métodos educativos y a mantener nuestra mente saludable."
+            }
+          ],
+          "conclusion": "La neurociencia nos ofrece una ventana al funcionamiento interno de nuestra mente, permitiéndonos mejorar nuestra calidad de vida y bienestar.",
+          "references": [
+            "Ramachandran, V. S. - Lo que el cerebro nos dice",
+            "Medina, J. - Reglas del cerebro"
+          ]
+        }
+      },
+      {
+        "title": "Química Orgánica",
+        "image": "chem.png",
+        "text": "Comprende los elementos y sus reacciones.",
+        "author": "Prof. Ana López",
+        "date": "25 Septiembre 2024",
+        "blogContent": {
+          "headerImage": "chem-banner.jpg",
+          "sections": [
+            {
+              "title": "La química de la vida",
+              "content": "La química orgánica se centra en el estudio de los compuestos que contienen carbono, fundamentales para la vida. Desde las proteínas hasta el ADN, el carbono es la base de la química biológica.",
+              "image": "molecules.jpg"
+            },
+            {
+              "title": "Reacciones que nos rodean",
+              "content": "Las reacciones químicas orgánicas son esenciales en procesos como la digestión de los alimentos y la producción de medicamentos."
+            }
+          ],
+          "conclusion": "La química orgánica nos ayuda a entender la composición y funcionamiento de los seres vivos, así como a desarrollar nuevas tecnologías y soluciones en medicina.",
+          "references": [
+            "Brown, W. H. - Introducción a la química orgánica",
+            "McMurry, J. - Química orgánica"
+          ]
+        }
+      },
+      {
+        "title": "Física Cuántica",
+        "image": "quantum.png",
+        "text": "Descubre el mundo de partículas y energía.",
+        "author": "Dr. Luis Fernández",
+        "date": "10 Octubre 2024",
+        "blogContent": {
+          "headerImage": "quantum-banner.jpg",
+          "sections": [
+            {
+              "title": "El mundo de lo muy pequeño",
+              "content": "La física cuántica estudia el comportamiento de las partículas subatómicas, revelando un mundo donde las reglas de la física clásica no siempre se aplican.",
+              "image": "particles.jpg"
+            },
+            {
+              "title": "Aplicaciones sorprendentes",
+              "content": "Gracias a la física cuántica, tenemos tecnologías como los semiconductores y la resonancia magnética, fundamentales en nuestra vida diaria."
+            }
+          ],
+          "conclusion": "Explorar la física cuántica nos abre la puerta a entender fenómenos sorprendentes y a desarrollar tecnologías innovadoras que transforman nuestra sociedad.",
+          "references": [
+            "Feynman, R. - Seis piezas fáciles",
+            "Greene, B. - El universo elegante"
+          ]
+        }
+      },
+      {
+        "title": "Genética y Evolución",
+        "image": "evolution.png",
+        "text": "Explora la historia de la vida en la Tierra.",
+        "author": "Dr. Alejandro Martínez",
+        "date": "18 Marzo 2025",
+        "blogContent": {
+          "headerImage": "evolution-banner.jpg",
+          "sections": [
+            {
+              "title": "¿Qué es la genética?",
+              "content": "La genética es la ciencia que estudia cómo las características y los rasgos físicos se transmiten de una generación a otra. Esto también se denomina 'herencia'.",
+              "image": "genetics.png"
+            },
+            {
+              "title": "¿Qué es la evolución?",
+              "content": "La evolución es el conjunto de cambios en características físicas y genéticas de poblaciones biológicas a través de generaciones. Este proceso ha originado la diversidad de formas de vida que existen sobre la Tierra a partir de un antepasado común.",
+              "image": "evolution-process.png"
+            },
+            {
+              "title": "La relación entre genética y evolución",
+              "content": "Las variaciones genéticas que alteran la actividad genética o la función de las proteínas pueden hacer aparecer diferentes rasgos en un organismo. Si un rasgo es ventajoso y ayuda al individuo a sobrevivir y reproducirse, es más probable que la variación genética se transmita a la siguiente generación, lo que se conoce como selección natural."
+            }
+          ],
+          "conclusion": "La genética y la evolución están íntimamente relacionadas, ya que las variaciones genéticas son la base de los cambios evolutivos que han dado lugar a la diversidad de la vida en nuestro planeta.",
+          "references": [
+            "Nemours KidsHealth - Genética para niños",
+            "MedlinePlus - ¿Cómo se involucran las variantes genéticas en la evolución?",
+            "Kiddle - Evolución biológica para niños"
+          ]
+        }
+      }
     ]
   },
   "T": {
-    "title": "Technology",
+    "title": "Tecnología",
     "color": "#d1dd00",
-    "icon": "steam-tech.png",
+    "icon": "tech.png",
     "content": [
-      { "title": "Inteligencia Artificial", "image": "ai.png", "text": "Aprende sobre redes neuronales y machine learning." },
-      { "title": "Internet de las Cosas", "image": "iot.png", "text": "Explora la conexión entre dispositivos inteligentes." },
-      { "title": "Desarrollo de Apps", "image": "app-dev.png", "text": "Descubre cómo crear aplicaciones móviles." },
-      { "title": "Ciberseguridad", "image": "cyber.png", "text": "Protege información y evita ataques digitales." },
-      { "title": "Realidad Virtual", "image": "vr.png", "text": "Sumérgete en experiencias interactivas digitales." },
-      { "title": "Big Data y Analítica", "image": "big-data.png", "text": "Analiza grandes volúmenes de información para obtener conocimientos." }
+      {
+        "title": "Inteligencia Artificial",
+        "image": "ai.png",
+        "text": "Aprende sobre redes neuronales y machine learning.",
+        "author": "Dr. Juan Pérez",
+        "date": "10 Enero 2024",
+        "blogContent": {
+          "headerImage": "ai-banner.jpg",
+          "sections": [
+            {
+              "title": "¿Qué es la Inteligencia Artificial?",
+              "content": "La Inteligencia Artificial (IA) es una rama de la informática que busca crear sistemas capaces de realizar tareas que requieren inteligencia humana, como el aprendizaje y la toma de decisiones.",
+              "image": "ai-concept.png"
+            },
+            {
+              "title": "Aplicaciones de la IA en la vida cotidiana",
+              "content": "Desde asistentes virtuales como Siri y Alexa hasta sistemas de recomendación en plataformas de streaming, la IA está presente en muchos aspectos de nuestra vida diaria."
+            }
+          ],
+          "conclusion": "La Inteligencia Artificial continúa evolucionando, ofreciendo soluciones innovadoras en campos como la medicina, la educación y el entretenimiento.",
+          "references": [
+            "Russell, S., & Norvig, P. - Artificial Intelligence: A Modern Approach",
+            "Goodfellow, I., Bengio, Y., & Courville, A. - Deep Learning"
+          ]
+        }
+      },
+      {
+        "title": "Internet de las Cosas",
+        "image": "iot.png",
+        "text": "Explora la conexión entre dispositivos inteligentes.",
+        "author": "Ing. María López",
+        "date": "5 Febrero 2024",
+        "blogContent": {
+          "headerImage": "iot-banner.jpg",
+          "sections": [
+            {
+              "title": "¿Qué es el Internet de las Cosas?",
+              "content": "El Internet de las Cosas (IoT) se refiere a la interconexión de dispositivos físicos a internet, permitiendo que se comuniquen y compartan datos entre sí.",
+              "image": "iot-network.png"
+            },
+            {
+              "title": "Ejemplos de IoT en el hogar",
+              "content": "Termostatos inteligentes, luces controladas por voz y refrigeradores que hacen la compra automáticamente son ejemplos de IoT en nuestra vida cotidiana."
+            }
+          ],
+          "conclusion": "El IoT está transformando la manera en que interactuamos con el mundo, haciendo nuestras vidas más eficientes y conectadas.",
+          "references": [
+            "Ashton, K. - That 'Internet of Things' Thing",
+            "Greengard, S. - The Internet of Things"
+          ]
+        }
+      },
+      {
+        "title": "Desarrollo de Apps",
+        "image": "app-dev.png",
+        "text": "Descubre cómo crear aplicaciones móviles.",
+        "author": "Lic. Carlos García",
+        "date": "20 Marzo 2024",
+        "blogContent": {
+          "headerImage": "app-dev-banner.jpg",
+          "sections": [
+            {
+              "title": "Introducción al desarrollo de aplicaciones",
+              "content": "El desarrollo de apps implica diseñar y programar aplicaciones para dispositivos móviles, como smartphones y tablets.",
+              "image": "app-development.png"
+            },
+            {
+              "title": "Herramientas y lenguajes de programación",
+              "content": "Lenguajes como Swift para iOS y Kotlin para Android son fundamentales en el desarrollo de aplicaciones móviles."
+            }
+          ],
+          "conclusion": "Crear aplicaciones permite ofrecer soluciones innovadoras y entretenidas, llegando a millones de usuarios en todo el mundo.",
+          "references": [
+            "Apple Developer Documentation - Swift Programming Language",
+            "Android Developers - Kotlin for Android"
+          ]
+        }
+      },
+      {
+        "title": "Ciberseguridad",
+        "image": "cyber.png",
+        "text": "Protege información y evita ataques digitales.",
+        "author": "Dra. Laura Martínez",
+        "date": "15 Abril 2024",
+        "blogContent": {
+          "headerImage": "cyber-banner.jpg",
+          "sections": [
+            {
+              "title": "Importancia de la ciberseguridad",
+              "content": "La ciberseguridad se centra en proteger sistemas, redes y datos de ataques digitales y accesos no autorizados.",
+              "image": "cyber-security.png"
+            },
+            {
+              "title": "Buenas prácticas para mantenerse seguro en línea",
+              "content": "Usar contraseñas fuertes, actualizar software regularmente y ser cauteloso con correos electrónicos sospechosos son medidas esenciales de seguridad."
+            }
+          ],
+          "conclusion": "La ciberseguridad es crucial en la era digital para proteger nuestra información personal y profesional.",
+          "references": [
+            "Stallings, W. - Network Security Essentials",
+            "Andress, J. - The Basics of Information Security"
+          ]
+        }
+      },
+      {
+        "title": "Realidad Virtual",
+        "image": "vr.png",
+        "text": "Sumérgete en experiencias interactivas digitales.",
+        "author": "Mtro. Andrés Gómez",
+        "date": "10 Mayo 2024",
+        "blogContent": {
+          "headerImage": "vr-banner.jpg",
+          "sections": [
+            {
+              "title": "¿Qué es la Realidad Virtual?",
+              "content": "La Realidad Virtual (VR) es una tecnología que permite al usuario sumergirse en un entorno digital interactivo, simulando una experiencia real.",
+              "image": "vr-experience.png"
+            },
+            {
+              "title": "Aplicaciones de la VR más allá del entretenimiento",
+              "content": "Además de los videojuegos, la VR se utiliza en la educación, la medicina y la formación profesional para crear simulaciones realistas."
+            }
+          ],
+          "conclusion": "La Realidad Virtual ofrece nuevas formas de aprendizaje y entretenimiento, ampliando las fronteras de lo que es posible.",
+          "references": [
+            "Jerald, J. - The VR Book: Human-Centered Design for Virtual Reality",
+            "Lanier, J. - Dawn of the New Everything"
+          ]
+        }
+      },
+      {
+        "title": "Big Data",
+        "image": "bigdata.png",
+        "text": "Explora el vasto mundo de los datos masivos y su impacto en la sociedad moderna.",
+        "author": "Ing. María Pérez",
+        "date": "20 Marzo 2025",
+        "blogContent": {
+          "headerImage": "bigdata-banner.jpg",
+          "sections": [
+            {
+              "title": "¿Qué es Big Data?",
+              "content": "Big Data se refiere al conjunto de datos masivos que, por su volumen, velocidad y variedad, requieren tecnologías y métodos específicos para su procesamiento y análisis. Estos datos provienen de diversas fuentes como redes sociales, sensores, transacciones comerciales y más.",
+              "image": "bigdata-overview.png"
+            },
+            {
+              "title": "Aplicaciones en la industria",
+              "content": "El Big Data tiene múltiples aplicaciones en diferentes sectores industriales. Por ejemplo, en la manufactura, se utiliza para optimizar procesos de producción, mejorar la calidad y predecir mantenimientos necesarios. En logística y transporte, ayuda a mejorar rutas y tiempos de entrega. Además, en marketing, permite personalizar campañas y entender mejor el comportamiento del consumidor.",
+              "image": "bigdata-industry.png"
+            },
+            {
+              "title": "Desafíos y consideraciones éticas",
+              "content": "El manejo de grandes volúmenes de datos plantea desafíos éticos significativos. La privacidad es una preocupación central, ya que la recopilación y análisis de datos pueden invadir la intimidad de las personas. Además, existe el riesgo de sesgos en los algoritmos que analizan estos datos, lo que puede conducir a decisiones injustas o discriminatorias. Es esencial establecer políticas claras que aborden la privacidad, la equidad y la transparencia en el uso de Big Data."
+            }
+          ],
+          "conclusion": "El Big Data representa una herramienta poderosa que, si se utiliza de manera ética y responsable, puede generar avances significativos en diversos campos. Sin embargo, es crucial abordar los desafíos asociados para garantizar que su implementación beneficie a la sociedad en su conjunto.",
+          "references": [
+            "OBS Business School - Big Data y sus principales aplicaciones: beneficios y ejemplos",
+            "Sixphere - El poder de Big Data en las empresas industriales",
+            "LinkedIn - Los Desafíos Éticos en Big Data y Cómo Abordarlos"
+          ]
+        }
+      }      
     ]
   },
   "E": {
-    "title": "Engineering",
-    "color": "#4bb1e0",
-    "icon": "steam-engine.png",
-    "content": [
-      { "title": "Robótica", "image": "robot.png", "text": "Diseña y construye robots inteligentes." },
-      { "title": "Energías Renovables", "image": "eolica.png", "text": "Aprovecha la energía del sol y el viento." },
-      { "title": "Automatización Industrial", "image": "factory.png", "text": "Optimiza la producción con maquinaria inteligente." },
-      { "title": "Drones y Aeroespacial", "image": "drone.png", "text": "Explora el diseño y uso de drones modernos." },
-      { "title": "Ingeniería Biomédica", "image": "biomed.png", "text": "Desarrolla prótesis y equipos médicos avanzados." },
-      { "title": "Impresión 3D", "image": "3d-printing.png", "text": "Crea objetos físicos a partir de modelos digitales." },
-      { "title": "Nanotecnología", "image": "nano.png", "text": "Explora la manipulación de materiales a nivel molecular." }
-    ]
+  "title": "Ingeniería",
+  "color": "#4bb1e0",
+  "icon": "engineering.png",
+  "content": [
+    {
+      "title": "Robótica",
+      "image": "robot.png",
+      "text": "Diseña y construye robots inteligentes.",
+      "author": "Ing. Carlos Sánchez",
+      "date": "15 Marzo 2025",
+      "blogContent": {
+        "headerImage": "robotics-banner.jpg",
+        "sections": [
+          {
+            "title": "Aplicaciones de la robótica en la industria",
+            "content": "La robótica industrial ha revolucionado la manufactura, permitiendo tareas como la manipulación de materiales, soldadura, ensamblaje y pintura con alta precisión y eficiencia.",
+            "image": "industrial-robotics.png"
+          },
+          {
+            "title": "Avances recientes en cirugía robótica",
+            "content": "La incorporación de robots quirúrgicos de última generación, como el Da Vinci SP, ha mejorado la precisión en cirugías mínimamente invasivas, reduciendo complicaciones y acelerando la recuperación de los pacientes.",
+            "image": "surgical-robotics.png"
+          }
+        ],
+        "conclusion": "La robótica continúa expandiéndose en diversos campos, mejorando procesos y abriendo nuevas posibilidades en la industria y la medicina.",
+        "references": [
+          "Ikusi - Aplicaciones de los robots industriales para optimizar los negocios",
+          "Cadena SER - L'Hospital de Sant Pau incorpora el robot quirúrgic més avançat de la sanitat pública espanyola"
+        ]
+      }
+    },
+    {
+      "title": "Energías Renovables",
+      "image": "eolica.png",
+      "text": "Aprovecha la energía del sol y el viento.",
+      "author": "Dra. Laura Gómez",
+      "date": "22 Febrero 2025",
+      "blogContent": {
+        "headerImage": "renewable-energy-banner.jpg",
+        "sections": [
+          {
+            "title": "Importancia de las energías renovables",
+            "content": "Las energías renovables, como la solar y la eólica, son fundamentales para reducir la dependencia de combustibles fósiles y mitigar el cambio climático.",
+            "image": "renewable-energy.png"
+          },
+          {
+            "title": "Innovaciones en tecnología solar",
+            "content": "Los avances en paneles solares de alta eficiencia y almacenamiento de energía están haciendo que la energía solar sea más accesible y rentable.",
+            "image": "solar-innovation.png"
+          }
+        ],
+        "conclusion": "La adopción de energías renovables es esencial para un futuro sostenible y requiere la colaboración de gobiernos, empresas y ciudadanos.",
+        "references": [
+          "International Renewable Energy Agency - Renewable Energy: A Key Climate Solution",
+          "National Geographic - How Solar Energy Became Cheap"
+        ]
+      }
+    },
+    {
+      "title": "Automatización Industrial",
+      "image": "factory.png",
+      "text": "Optimiza la producción con maquinaria inteligente.",
+      "author": "Mtro. Andrés López",
+      "date": "5 Enero 2025",
+      "blogContent": {
+        "headerImage": "industrial-automation-banner.jpg",
+        "sections": [
+          {
+            "title": "Beneficios de la automatización en la industria",
+            "content": "La automatización industrial mejora la eficiencia, reduce errores y aumenta la seguridad en los procesos de manufactura.",
+            "image": "automation-benefits.png"
+          },
+          {
+            "title": "Tendencias actuales en automatización",
+            "content": "La integración de la inteligencia artificial y el internet de las cosas está llevando la automatización a nuevos niveles de sofisticación.",
+            "image": "automation-trends.png"
+          }
+        ],
+        "conclusion": "La automatización es clave para la competitividad industrial y seguirá evolucionando con las nuevas tecnologías.",
+        "references": [
+          "Computing - Robótica industrial: Qué es, usos y aplicaciones",
+          "UNIR - ¿Qué es la robótica industrial? Concepto, usos y futuro"
+        ]
+      }
+    },
+    {
+      "title": "Drones y Aeroespacial",
+      "image": "drone.png",
+      "text": "Explora el diseño y uso de drones modernos.",
+      "author": "Ing. Marta Ruiz",
+      "date": "12 Abril 2025",
+      "blogContent": {
+        "headerImage": "drones-banner.jpg",
+        "sections": [
+          {
+            "title": "Aplicaciones de los drones en la industria",
+            "content": "Los drones se utilizan en agricultura, logística, fotografía y más, ofreciendo perspectivas únicas y eficiencia en tareas complejas.",
+            "image": "drone-applications.png"
+          },
+          {
+            "title": "Regulaciones y seguridad en el uso de drones",
+            "content": "Es crucial conocer las normativas y buenas prácticas para operar drones de manera segura y legal.",
+            "image": "drone-safety.png"
+          }
+        ],
+        "conclusion": "El sector de los drones sigue creciendo, presentando oportunidades y desafíos en múltiples industrias.",
+        "references": [
+          "Federal Aviation Administration - Drones: Getting Started",
+          "MIT Technology Review - The Drone Revolution Is Here"
+        ]
+      }
+    },
+    {
+      "title": "Ingeniería Biomédica",
+      "image": "biomed.png",
+      "text": "Desarrolla prótesis y equipos médicos avanzados.",
+      "author": "Dr. José Martínez",
+      "date": "30 Marzo 2025",
+      "blogContent": {
+        "headerImage": "biomedical-engineering-banner.jpg",
+        "sections": [
+          {
+            "title": "Innovaciones en prótesis biónicas",
+            "content": "Las prótesis modernas integran sensores y actuadores que imitan funciones naturales, mejorando la calidad de vida de los pacientes.",
+            "image": "bionic-prosthetics.png"
+          },
+          {
+            "title": "Desarrollo de dispositivos médicos inteligentes",
+            "content": "Equipos como marcapasos y monitores de glucosa están incorporando tecnología avanzada para un monitoreo y tratamiento más efectivos.",
+            "image": "smart-medical-devices.png"
+          }
+        ],
+        "conclusion": "La ingeniería biomédica está a la vanguardia de la innovación médica, ofreciendo soluciones que salvan y mejoran vidas.",
+        "references": [
+          "IEEE Engineering in Medicine and Biology Society - Advances in Biomedical Engineering",
+          "Mayo Clinic - Innovations in Prosthetics"
+        ]
+      }
+    },
+    {
+      "title": "Impresión 3D",
+      "image": "3d-printing.png",
+      "text": "Crea objetos físicos a partir de modelos digitales.",
+      "author": "Ing. Laura Méndez",
+      "date": "15 Marzo 2025",
+      "blogContent": {
+        "headerImage": "3d-printing-banner.jpg",
+        "sections": [
+          {
+            "title": "¿Qué es la Impresión 3D?",
+            "content": "La impresión 3D, o fabricación aditiva, es una tecnología que permite crear objetos tridimensionales mediante la superposición de capas de material, basándose en diseños digitales.",
+            "image": "3d-printing-process.png"
+          },
+          {
+            "title": "Aplicaciones en la industria",
+            "content": "La impresión 3D ha revolucionado múltiples sectores industriales. En la industria aeroespacial, se utiliza para producir piezas complejas y ligeras que mejoran la eficiencia de las aeronaves. En el sector automotriz, permite la creación rápida de prototipos y piezas personalizadas. Además, en la medicina, ha facilitado la fabricación de prótesis a medida y modelos anatómicos para planificación quirúrgica.",
+            "image": "3d-printing-industries.png"
+          }
+        ],
+        "conclusion": "La impresión 3D continúa expandiendo sus aplicaciones, ofreciendo soluciones innovadoras y personalizadas en diversos campos, lo que la convierte en una herramienta esencial en la ingeniería moderna.",
+        "references": [
+          "Markforged - Cinco sectores que utilizan la impresión 3D",
+          "Formlabs - 25 ejemplos de uso de la impresión 3D (que te sorprenderán)",
+          "RapidDirect - Las 6 principales industrias que utilizan la impresión 3D"
+        ]
+      }
+    },
+    {
+      "title": "Nanotecnología",
+      "image": "nano.png",
+      "text": "Explora la manipulación de materiales a nivel molecular.",
+      "author": "Dr. José Ramírez",
+      "date": "10 Abril 2025",
+      "blogContent": {
+        "headerImage": "nanotechnology-banner.jpg",
+        "sections": [
+          {
+            "title": "¿Qué es la Nanotecnología?",
+            "content": "La nanotecnología es el campo de la ciencia y la ingeniería dedicado al diseño, producción y aplicación de estructuras, dispositivos y sistemas mediante el control de la materia a escala nanométrica (uno de cada mil millones de un metro).",
+            "image": "nanotechnology-concept.png"
+          },
+          {
+            "title": "Aplicaciones y desafíos éticos",
+            "content": "La nanotecnología tiene aplicaciones en medicina, electrónica, energía y materiales avanzados. Sin embargo, plantea desafíos éticos relacionados con la salud y seguridad, debido a la potencial toxicidad de los nanomateriales, y preocupaciones sobre la privacidad y el medio ambiente.",
+            "image": "nanotechnology-ethics.png"
+          }
+        ],
+        "conclusion": "Aunque la nanotecnología ofrece oportunidades significativas para el avance tecnológico, es crucial abordar sus desafíos éticos para garantizar un desarrollo responsable y sostenible.",
+        "references": [
+          "Universidad de Barcelona - Nanotecnologías: los desafíos científicos, éticos y sociales para el siglo XXI",
+          "SciELO - La ética frente a las nanociencias y las nanotecnologías",
+          "Nódulo Materialista - La nanotecnología, inquietudes sociales y problemas éticos derivados"
+        ]
+      }
+    }
+  ]
   },
-  "A": {
-    "title": "Art",
-    "color": "#f6c500",
-    "icon": "steam-art.png",
-    "content": [
-      { "title": "Diseño Digital", "image": "digital-art.png", "text": "Combina arte y tecnología en creaciones digitales." },
-      { "title": "Animación 3D", "image": "animation.png", "text": "Explora el mundo del modelado y la animación." },
-      { "title": "Música Electrónica", "image": "music.png", "text": "Crea sonidos con sintetizadores y software." },
-      { "title": "Fotografía Creativa", "image": "photo.png", "text": "Captura imágenes con un enfoque artístico." },
-      { "title": "Graffiti y Arte Urbano", "image": "graffiti.png", "text": "Expresa ideas a través del arte en las calles." },
-      { "title": "Escultura Digital", "image": "sculpture.png", "text": "Usa software para modelar en 3D." },
-      { "title": "Arte Generativo", "image": "generative.png", "text": "Crea arte con algoritmos y programación." }
+    "A": {
+      "title": "Arte",
+      "color": "#f6c500",
+      "icon": "art.png",
+      "content": [
+        {
+          "title": "Diseño Digital",
+          "image": "digital-art.png",
+          "text": "Combina arte y tecnología en creaciones digitales.",
+          "author": "Mtra. Ana Torres",
+          "date": "15 Marzo 2025",
+          "blogContent": {
+            "headerImage": "digital-art-banner.jpg",
+            "sections": [
+              {
+                "title": "¿Qué es el Diseño Digital?",
+                "content": "El diseño digital es una disciplina que utiliza herramientas tecnológicas para crear contenido visual interactivo, abarcando desde sitios web hasta publicidad digital.",
+                "image": "digital-design-concept.png"
+              },
+              {
+                "title": "Aplicaciones del Diseño Digital",
+                "content": "Se aplica en la creación de presentaciones interactivas, sitios web con elementos multimedia y anuncios digitales atractivos."
+              }
+            ],
+            "conclusion": "El diseño digital fusiona creatividad y tecnología, ofreciendo soluciones visuales innovadoras en múltiples plataformas.",
+            "references": [
+              "U-tad - ¿Qué es el diseño digital?"
+            ]
+          }
+        },
+        {
+          "title": "Animación 3D",
+          "image": "animation.png",
+          "text": "Explora el mundo del modelado y la animación.",
+          "author": "Lic. Pedro Gómez",
+          "date": "22 Abril 2025",
+          "blogContent": {
+            "headerImage": "animation-3d-banner.jpg",
+            "sections": [
+              {
+                "title": "Introducción a la Animación 3D",
+                "content": "La animación 3D es una técnica que permite crear y manipular objetos digitales en un espacio tridimensional, otorgándoles movimiento y vida.",
+                "image": "3d-animation-concept.png"
+              },
+              {
+                "title": "Herramientas Principales en Animación 3D",
+                "content": "Software como Autodesk Maya y Blender son fundamentales para el rigging, animación y renderización en la industria del 3D."
+              }
+            ],
+            "conclusion": "La animación 3D ha revolucionado campos como el cine, los videojuegos y la realidad virtual, ofreciendo experiencias visuales inmersivas.",
+            "references": [
+              "Animum - Programas de animación 3D ¿cuáles son los mejores?"
+            ]
+          }
+        },
+        {
+          "title": "Música Electrónica",
+          "image": "music.png",
+          "text": "Crea sonidos con sintetizadores y software.",
+          "author": "DJ Laura Martínez",
+          "date": "10 Mayo 2025",
+          "blogContent": {
+            "headerImage": "electronic-music-banner.jpg",
+            "sections": [
+              {
+                "title": "Origen de la Música Electrónica",
+                "content": "La música electrónica surge de la experimentación con sonidos generados electrónicamente, utilizando sintetizadores y computadoras.",
+                "image": "electronic-music-origin.png"
+              },
+              {
+                "title": "Herramientas para la Creación Musical",
+                "content": "Software como Ableton Live y FL Studio permiten a los artistas producir y mezclar pistas de alta calidad."
+              }
+            ],
+            "conclusion": "La música electrónica ha transformado la industria musical, ofreciendo una amplia gama de géneros y estilos que continúan evolucionando.",
+            "references": [
+              "Historia de la Música Electrónica - Instituto de Música Contemporánea"
+            ]
+          }
+        },
+        {
+          "title": "Fotografía Creativa",
+          "image": "photo.png",
+          "text": "Captura imágenes con un enfoque artístico.",
+          "author": "Fotógrafa Carla Ruiz",
+          "date": "5 Junio 2025",
+          "blogContent": {
+            "headerImage": "creative-photography-banner.jpg",
+            "sections": [
+              {
+                "title": "Concepto de Fotografía Creativa",
+                "content": "La fotografía creativa implica el uso de técnicas innovadoras para capturar imágenes únicas que transmitan emociones y conceptos.",
+                "image": "creative-photography-concept.png"
+              },
+              {
+                "title": "Técnicas y Herramientas",
+                "content": "El uso de lentes especiales, iluminación experimental y edición digital son esenciales en este tipo de fotografía."
+              }
+            ],
+            "conclusion": "La fotografía creativa permite a los artistas expresar su visión única del mundo, rompiendo las barreras de la fotografía tradicional.",
+            "references": [
+              "Técnicas de Fotografía Creativa - Escuela de Fotografía"
+            ]
+          }
+        },
+        {
+          "title": "Graffiti y Arte Urbano",
+          "image": "graffiti.png",
+          "text": "Expresa ideas a través del arte en las calles.",
+          "author": "Artista Urbano José López",
+          "date": "20 Julio 2025",
+          "blogContent": {
+            "headerImage": "urban-art-banner.jpg",
+            "sections": [
+              {
+                "title": "Historia del Graffiti",
+                "content": "El graffiti comenzó como una forma de protesta y expresión en las calles, evolucionando hasta convertirse en una forma de arte reconocida.",
+                "image": "graffiti-history.png"
+              },
+              {
+                "title": "Impacto en la Cultura Popular",
+                "content": "El arte urbano ha influenciado la moda, la música y el diseño, reflejando las voces de comunidades marginadas."
+              }
+            ],
+            "conclusion": "El graffiti y el arte urbano son manifestaciones culturales que embellecen las ciudades y transmiten mensajes poderosos.",
+            "references": [
+              "El Arte del Graffiti - Revista de Arte Contemporáneo"
+            ]
+          }
+        },
+        {
+          "title": "Escultura Digital",
+          "image": "sculpture.png",
+          "text": "Usa software para modelar en 3D.",
+          "author": "Mtro. Andrés Gómez",
+          "date": "15 Junio 2024",
+          "blogContent": {
+            "headerImage": "sculpture-banner.jpg",
+            "sections": [
+              {
+                "title": "¿Qué es la Escultura Digital?",
+                "content": "La escultura digital es una técnica artística que utiliza software especializado para crear modelos tridimensionales en un entorno virtual. A diferencia de la escultura tradicional, que emplea materiales físicos como piedra o arcilla, la escultura digital permite a los artistas moldear y manipular objetos en 3D utilizando herramientas digitales.",
+                "image": "digital-sculpting.png"
+              },
+              {
+                "title": "Herramientas y Software Comunes",
+                "content": "Existen diversas herramientas y programas utilizados en la escultura digital. Algunos de los más populares incluyen ZBrush, Blender y Autodesk Maya. Estos softwares ofrecen a los artistas la capacidad de esculpir, texturizar y renderizar modelos 3D con gran detalle y precisión."
+              }
+            ],
+            "conclusion": "La escultura digital ha revolucionado el mundo del arte, ofreciendo nuevas posibilidades creativas y técnicas para los artistas contemporáneos.",
+            "references": [
+              "Animum 3D - Escultura digital: el 3D sin límites",
+              "Adobe Substance 3D - ¿Qué es la escultura digital en 3D?"
+            ]
+          }
+        },
+        {
+          "title": "Arte Generativo",
+          "image": "generative.png",
+          "text": "Crea arte con algoritmos y programación.",
+          "author": "Dra. Laura Martínez",
+          "date": "20 Julio 2024",
+          "blogContent": {
+            "headerImage": "generative-banner.jpg",
+            "sections": [
+              {
+                "title": "¿Qué es el Arte Generativo?",
+                "content": "El arte generativo es una corriente artística que utiliza sistemas autónomos, como algoritmos y programas de computadora, para generar obras de arte. Estos sistemas pueden producir resultados que el artista no controla completamente, lo que lleva a creaciones únicas e inesperadas.",
+                "image": "generative-art-process.png"
+              },
+              {
+                "title": "Aplicaciones y Ejemplos",
+                "content": "El arte generativo se manifiesta en diversas formas, desde imágenes digitales hasta música y esculturas. Un ejemplo destacado es la obra del artista Refik Anadol, quien utiliza inteligencia artificial para crear instalaciones inmersivas que exploran nuevas dimensiones de la percepción artística."
+              }
+            ],
+            "conclusion": "El arte generativo representa una fusión entre creatividad humana y tecnología, abriendo nuevas fronteras en la expresión artística.",
+            "references": [
+              "freeCodeCamp - Una introducción al arte generativo: qué es y cómo se hace"
+            ]
+          }
+        }
     ]
   },
   "M": {
-    "title": "Math",
+    "title": "Matemáticas",
     "color": "#FF5722",
-    "icon": "steam-math.png",
+    "icon": "math.png",
     "content": [
-      { "title": "Geometría Fractal", "image": "fractal.png", "text": "Descubre los patrones matemáticos de la naturaleza." },
-      { "title": "Estadística y Probabilidad", "image": "stats.png", "text": "Aprende sobre la predicción de eventos." },
-      { "title": "Álgebra Computacional", "image": "algebra.png", "text": "Usa la matemática para resolver problemas complejos." },
-      { "title": "Criptografía", "image": "crypto.png", "text": "Protege información con técnicas matemáticas." },
-      { "title": "Matemática Financiera", "image": "finance.png", "text": "Calcula inversiones, intereses y rentabilidad." },
-      { "title": "Topología", "image": "topology.png", "text": "Explora las propiedades de los espacios geométricos." },
-      { "title": "Cálculo Diferencial", "image": "calculus.png", "text": "Comprende los cambios en sistemas dinámicos." }
+      {
+        "title": "Geometría Fractal",
+        "image": "fractal.png",
+        "text": "Descubre los patrones matemáticos de la naturaleza.",
+        "author": "Dr. Juan Pérez",
+        "date": "10 Marzo 2025",
+        "blogContent": {
+          "headerImage": "fractal-banner.jpg",
+          "sections": [
+            {
+              "title": "¿Qué es la Geometría Fractal?",
+              "content": "La geometría fractal es una rama de las matemáticas que estudia figuras geométricas complejas que se repiten a diferentes escalas. Estos patrones se observan comúnmente en la naturaleza, como en las ramificaciones de los árboles, las formas de las nubes y las montañas.",
+              "image": "fractal-concept.png"
+            },
+            {
+              "title": "Aplicaciones de la Geometría Fractal",
+              "content": "La modelización fractal permite crear simulaciones más realistas en ciencias de la tierra, como en la representación de texturas geológicas y formaciones naturales."
+            }
+          ],
+          "conclusion": "La geometría fractal nos ayuda a comprender y modelar la complejidad de la naturaleza, ofreciendo herramientas para representar estructuras irregulares y caóticas.",
+          "references": [
+            "Fractales: los patrones que se encuentran en la naturaleza - National Geographic",
+            "Aplicación de la geometría fractal en las ciencias de la tierra - Universidad Politécnica de Madrid"
+          ]
+        }
+      },
+      {
+        "title": "Estadística y Probabilidad",
+        "image": "stats.png",
+        "text": "Aprende sobre la predicción de eventos.",
+        "author": "Mtra. Laura Gómez",
+        "date": "22 Abril 2025",
+        "blogContent": {
+          "headerImage": "statistics-banner.jpg",
+          "sections": [
+            {
+              "title": "Conceptos Básicos de Estadística",
+              "content": "La estadística es la ciencia que se encarga de la recolección, análisis e interpretación de datos. Es fundamental en diversas disciplinas para la toma de decisiones informadas.",
+              "image": "statistics-concept.png"
+            },
+            {
+              "title": "Introducción a la Probabilidad",
+              "content": "La probabilidad es una herramienta matemática utilizada para estudiar el azar y medir la posibilidad de que ocurra un evento determinado."
+            }
+          ],
+          "conclusion": "La estadística y la probabilidad son esenciales para comprender fenómenos aleatorios y tomar decisiones basadas en datos.",
+          "references": [
+            "Conceptos básicos de estadística - SalusPlay",
+            "Probabilidad: conceptos básicos - Khan Academy"
+          ]
+        }
+      },
+      {
+        "title": "Álgebra Computacional",
+        "image": "algebra.png",
+        "text": "Usa la matemática para resolver problemas complejos.",
+        "author": "Dr. Carlos Mendoza",
+        "date": "15 Mayo 2025",
+        "blogContent": {
+          "headerImage": "computational-algebra-banner.jpg",
+          "sections": [
+            {
+              "title": "¿Qué es el Álgebra Computacional?",
+              "content": "El álgebra computacional es una disciplina que utiliza algoritmos y software para resolver problemas algebraicos complejos, facilitando cálculos que serían inviables manualmente.",
+              "image": "computational-algebra-concept.png"
+            },
+            {
+              "title": "Aplicaciones del Álgebra Computacional",
+              "content": "Se aplica en áreas como la criptografía, la teoría de números y la modelización matemática en ciencias e ingeniería."
+            }
+          ],
+          "conclusion": "El álgebra computacional amplía las capacidades de resolución de problemas en matemáticas y otras disciplinas, permitiendo abordar desafíos más complejos.",
+          "references": [
+            "Introducción al Álgebra Computacional - Universidad de XYZ"
+          ]
+        }
+      },
+      {
+        "title": "Criptografía",
+        "image": "crypto.png",
+        "text": "Protege información con técnicas matemáticas.",
+        "author": "Ing. María López",
+        "date": "30 Junio 2025",
+        "blogContent": {
+          "headerImage": "cryptography-banner.jpg",
+          "sections": [
+            {
+              "title": "Fundamentos de la Criptografía",
+              "content": "La criptografía es la ciencia que estudia técnicas para proteger la información y las comunicaciones mediante códigos y cifrados.",
+              "image": "cryptography-concept.png"
+            },
+            {
+              "title": "Importancia de la Criptografía",
+              "content": "Es esencial para la seguridad en la comunicación digital, protegiendo datos sensibles y garantizando la privacidad."
+            }
+          ],
+          "conclusion": "La criptografía es fundamental en la era digital para asegurar la confidencialidad e integridad de la información.",
+          "references": [
+            "Introducción a la Criptografía - Instituto Nacional de Ciberseguridad"
+          ]
+        }
+      },
+      {
+        "title": "Matemática Financiera",
+        "image": "finance.png",
+        "text": "Calcula inversiones, intereses y rentabilidad.",
+        "author": "Lic. Roberto Díaz",
+        "date": "10 Julio 2025",
+        "blogContent": {
+          "headerImage": "financial-math-banner.jpg",
+          "sections": [
+            {
+              "title": "¿Qué es la Matemática Financiera?",
+              "content": "La matemática financiera se centra en el estudio de herramientas y métodos matemáticos aplicados a las finanzas, como el cálculo de intereses, rentabilidad y valoración de inversiones.",
+              "image": "financial-math-concept.png"
+            },
+            {
+              "title": "Aplicaciones de la Matemática Financiera",
+              "content": "Se utiliza en la planificación financiera, evaluación de proyectos de inversión y gestión de riesgos económicos."
+            }
+          ],
+          "conclusion": "La matemática financiera es crucial para la toma de decisiones económicas informadas y la gestión eficiente de recursos financieros.",
+          "references": [
+            "Fundamentos de Matemática Financiera - Universidad de ABC"
+          ]
+        }
+      },
+      {
+        "title": "Topología",
+        "image": "topology.png",
+        "text": "Explora las propiedades de los espacios geométricos.",
+        "author": "Dr. Juan Pérez",
+        "date": "10 Marzo 2025",
+        "blogContent": {
+          "headerImage": "topology-banner.jpg",
+          "sections": [
+            {
+              "title": "¿Qué es la Topología?",
+              "content": "La topología es una rama de las matemáticas que estudia las propiedades de los espacios que permanecen invariantes bajo transformaciones continuas, como estiramientos o deformaciones sin romperlos. Se enfoca en conceptos como continuidad, compacidad y conectividad.",
+              "image": "topology-concept.png"
+            },
+            {
+              "title": "Aplicaciones de la Topología",
+              "content": "La topología tiene aplicaciones en diversas áreas: en física se usa para estudiar propiedades de materiales y fenómenos cuánticos, en biología para analizar la estructura del ADN y proteínas, y en informática para el análisis de redes y algoritmos."
+            }
+          ],
+          "conclusion": "La topología ofrece una perspectiva única para comprender la estructura y las propiedades fundamentales de los espacios, facilitando la abstracción de conceptos matemáticos complejos.",
+          "references": [
+            "Macho Stadler, M. - Introducción a la Topología"
+          ]
+        }
+      },
+      {
+        "title": "Cálculo Diferencial",
+        "image": "calculus.png",
+        "text": "Comprende los cambios en sistemas dinámicos.",
+        "author": "Dra. María López",
+        "date": "15 Abril 2025",
+        "blogContent": {
+          "headerImage": "calculus-banner.jpg",
+          "sections": [
+            {
+              "title": "¿Qué es el Cálculo Diferencial?",
+              "content": "El cálculo diferencial se centra en el estudio de las tasas de cambio y el concepto de derivada, que mide la variación instantánea de una función respecto a una de sus variables.",
+              "image": "calculus-concept.png"
+            },
+            {
+              "title": "Aplicaciones del Cálculo Diferencial",
+              "content": "Esta rama es fundamental en campos como la física, la ingeniería y la economía, permitiendo modelar y predecir el comportamiento de sistemas en constante cambio."
+            }
+          ],
+          "conclusion": "El cálculo diferencial es una herramienta esencial para analizar y comprender fenómenos de cambio en diversas disciplinas, facilitando la resolución de problemas complejos.",
+          "references": [
+            "Fundamentos del Cálculo Diferencial - Instituto de Matemáticas Aplicadas"
+          ]
+        }
+      }
     ]
   }
 }

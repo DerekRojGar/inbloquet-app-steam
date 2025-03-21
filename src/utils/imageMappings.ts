@@ -7,6 +7,12 @@ const imageMap: { [key: string]: any } = {
     "steam-engine.png": require("../assets/icons/steam-engine.png"),
     "steam-art.png": require("../assets/icons/steam-art.png"),
     "steam-math.png": require("../assets/icons/steam-math.png"),
+    "science.png": require("../assets/icons/science.png"),
+    "tech.png": require("../assets/icons/tech.png"),
+    "engineering.png": require("../assets/icons/engineering.png"),
+    "art.png": require("../assets/icons/art.png"),
+    "math.png": require("../assets/icons/math.png"),
+    
   
     // Images
     "dna.png": require("../assets/images/dna.png"),
@@ -45,6 +51,17 @@ const imageMap: { [key: string]: any } = {
     "calculus.png": require("../assets/images/calculus.png"),
     "dna-microscope.png" : require("../assets/images/dna.png"),
     "dna-banner.jpg" : require("../assets/images/dna-banner.jpg"),
+
+    "space-banner.jpg" : require("../assets/images/space-banner.jpg"),
+    "galaxy.jpg" : require("../assets/images/galaxy.jpg"),
+    "eco-banner.jpg" : require("../assets/images/eco-banner.jpg"),
+    "biodiversity.jpg" : require("../assets/images/biodiversity.jpg"),
+    "brain-banner.jpg" : require("../assets/images/brain-banner.jpg"),
+    "neurons.jpg" : require("../assets/images/neurons.jpg"),
+    "chem-banner.jpg" : require("../assets/images/chem-banner.jpg"),
+    "molecules.jpg" : require("../assets/images/molecules.jpg"),
+    "quantum-banner.jpg" : require("../assets/images/quantum-banner.jpg"),
+    "particles.jpg" : require("../assets/images/particles.jpg"),
   };
   
   export const getImageSource = (imagePath: string) => {
